@@ -1,3 +1,9 @@
+@keyframes pisca {
+    0%{opacity: 0.2;}
+    50%{opacity: 1;}
+    100%{opacity: 0.2;}
+}
+
 body {
     margin: 0;
     display: flex;
@@ -82,7 +88,12 @@ body {
     height: 50px;
 }
 
-
+.divisao-1-esquerda{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
 .divisao-1{
     flex: 1;
     display: flex;
@@ -92,4 +103,54 @@ body {
     font-size: 15px;
     border-top: 2px solid #000;
     padding-left: 10px;
+}
+.divisao-1-esquerda-type, .divisao-1-esquerda-title, .divisao-1-esquerda-numbers{
+    display: flex;
+    align-items: center;
+    height: 50px;
+   
+
+}
+
+.divisao-1-esquerda-type{
+    justify-content: center;
+}
+
+.divisao-1-esquerda-other{    
+    flex: 1;    
+    line-height: 30px;
+
+}
+
+.number{
+    border: 1px solid;
+    width: 30px;
+    height: 40px;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.pisca{
+    animation: pisca;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.divisao-1-direita{
+    width: 90px;
+
+}
+.div-1-direita-img{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+    background-color: #FFF;
+    text-align: center;
+}
+
+.div-1-direita-img img{
+    width: 100%;
 }

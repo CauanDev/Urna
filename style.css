@@ -4,6 +4,9 @@
     100%{opacity: 0.2;}
 }
 
+
+
+
 body {
     margin: 0;
     display: flex;
@@ -19,7 +22,7 @@ body {
 }
 .tela {
     width: 500px;
-    height: 320px;
+    height: 360px;
     background: linear-gradient(to right, #E8E8E8, #C1C1C1);
     border: 2px solid #555;
     display: flex;
@@ -142,6 +145,8 @@ body {
 }
 .divisao-1-direita{
     width: 90px;
+    display: flex;
+    flex-direction: column;
 }
 
 .div-1-direita-img{
@@ -152,18 +157,31 @@ body {
     text-align: center;
     height:52%;
 }
-
+.tela
 .div-1-direita-img img{
     width: 100%;
     
 }
 
 .small {
-    width: 80%;
+    width: 70%;
     font-size: 12px;
 }
 
 .voto-branco{
     font-size: 45px;
     font-weight: bold;
+}
+
+.div-1-direita-img-small img{
+    width: 100%;
+    border: 1px solid #000;
+    
+    text-align: center;
+}
+.div-1-direita-img-small{
+    background-color: #FFF;
+    width: 80px;
+    text-align: center;
+    flex-direction: column;
 }
